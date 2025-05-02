@@ -1,0 +1,3 @@
+Modelo regnet_y_128gf_model_batchsize32_imgsize224_learningrate0.001_epoch40:
+
+https://drive.google.com/file/d/1BDk_GjEENdNEapDhznx8Us5h-1HsBYtZ/view?usp=drive_link

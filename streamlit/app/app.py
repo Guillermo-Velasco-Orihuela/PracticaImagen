@@ -17,7 +17,8 @@ import torchvision.models as models
 num_classes = 4
 Images_size = 224
 Images_types = ['jpg', 'jpeg', 'png']
-models_dir = os.path.join(os.path.dirname(os.path.dirname(os.getcwd())), 'models')
+ROOT_DIR = Path(__file__).resolve().parents[2]  # PracticaImagen/
+models_dir = ROOT_DIR / 'models'
 
 classnames = [
     "cataract", "diabetic_retinopathy", "glaucoma", "normal"
@@ -88,7 +89,7 @@ class CustomImageDataset(Dataset):
 
 # --- Función principal ---
 def main():
-    st.set_page_config(page_title="Clasificador de Imágenes IA", layout="centered", page_icon="📸")
+    st.set_page_config(page_title="Clasificador de Imágenes de Enfermedades Oculares", layout="centered", page_icon="📸")
 
     # Header con estilo
     st.markdown("""
@@ -101,13 +102,12 @@ def main():
     }
     </style>
     """, unsafe_allow_html=True)
-    st.markdown('<h1 class="header">📸 Clasificador Inteligente de Imágenes</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="header">📸 Clasificador de Imágenes de Enfermedades Oculares 👁️</h1>', unsafe_allow_html=True)
 
     # Tarjeta de introducción
     with st.container():
         st.markdown("""
-        **¡Descubre el poder de la IA!**  
-        Sube una imagen y nuestro sistema inteligente te dirá a qué categoría pertenece.
+        Sube una imagen y nuestro sistema inteligente te dirá a qué enfermedad ocular pertenece.
         """)
         st.markdown("---")
 

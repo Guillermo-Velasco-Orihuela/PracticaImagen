@@ -2,6 +2,8 @@
 
 This project focuses on image classification using CNNs (Convolutional Neural Networks) with PyTorch and Streamlit. It includes a series of Jupyter notebooks exploring classical ML, deep learning, and commercial pre-trained models. The app visualizes training performance and allows user interaction through a web interface.
 
+![Demo](media/demo.gif)
+
 ## 📁 Project Structure
 
 ```
